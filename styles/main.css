@@ -1,0 +1,203 @@
+body {
+    margin: 0px;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.hero-section {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-section video {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+
+
+.hero-text {
+    width: 300px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 10px solid #778E68;
+    border-radius: 20px;
+    background-color: rgba(255,255,255,.7);
+    padding: 10px 30px;
+    font-family: 'Kaushan Script', cursive;
+}
+
+.hero-text p{
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.info-section {
+    min-height: 60vh;
+    background: linear-gradient(#BED5A3,
+    #D8AAA6);
+    text-align: center;
+    padding: 20px;
+}
+
+.mission {
+    display: flex;
+    height: 20vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.mission p{
+    font-size: 2.5em;
+    font-family: 'Kaushan Script', cursive;
+
+}
+
+.info-paragraph{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-paragraph p{
+    width: 80%;
+}
+
+.info-list{
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sign-up{
+    min-height: 60vh;
+    background-color: #D8AAA6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.sign-up h2 {
+    font-family: 'Kaushan Script', cursive;
+}
+
+#userForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 4px solid black;
+    border-radius: 20px;
+    padding: 50px;
+}
+
+#userDataButton{
+    margin: 20px;
+    background-color: #AD2450;
+    color: white;
+    width: 70%;
+}
+
+#userDataButton:hover{
+    background-color: #B46F7C;
+    color: white;
+    border: 2px solid white;
+}
+
+.input-group{
+    display: flex;
+}
+
+#userPhone + span {
+    padding-right: 30px;
+  }
+  
+  #userPhone:invalid+span:after {
+    position: absolute; content: '✖';
+    padding-left: 5px;
+    color: #8b0000;
+  }
+  
+  #userPhone:valid+span:after {
+    position: absolute;
+    content: '✓';
+    padding-left: 5px;
+    color: #009000;
+  }
+
+.photo-gallery{
+    min-height: 50vh;
+    background-color: #778E68;
+    padding: 20px;
+}
+
+.photo-gallery img{
+    width: 100%;
+}
+
+.image-column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height:50vh;
+}
+
+.contact-section{
+    min-height: 70vh;
+    background-color: #D8AAA6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#commentForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#commentForm h2{
+    font-family: 'Kaushan Script', cursive;
+
+}
+
+@media screen and (max-width: 488px){
+    .hero-section video {
+        display:none;
+    }
+    .hero-section {
+        background: url("../images/hero-image.jpeg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+@media screen and (min-width: 489px) and (max-width: 1025px){
+    .hero-section  {
+        min-height: 40vh;
+    }
+
+    .mission {
+        height: 10vh;
+    }
+
+    .info-section {
+        min-height: 40vh;
+    }
+
+    .sign-up{
+        min-height: 30vh;
+    }
+
+    .contact-section{
+        min-height: 40vh;
+    }
+}

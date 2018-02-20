@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mom2Mom</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <div class="hero-section">
+        <video src="videos/hero-vid.mp4" autoplay loop poster="images/hero-image.jpeg">
+            Sorry, your browser doesn't support embedded videos.
+        </video>
+
+        <div class="hero-text">
+            <h1>MOM2MOM</h1>
+            <p>Lorum Ipson Lorum Ipson Lorum Ipson</p>
+        </div>
+    </div>
+
+    <div class="container-fluid info-section">
+        <div class="row mission">
+            <p>Mission Statement will go right here.</p>
+        </div>
+        <div class="row">
+            <div class="col-md-6 info-paragraph">
+                <p>Mizzenmast lugger strike colors come about brigantine draught swing the lead aft fluke piracy poop deck bowsprit knave belaying pin splice the main brace fathom topsail heave to bring a spring upon her cable hulk jury mast matey broadside quarter boatswain spanker blow the man down avast overhaul furl chandler gangway Blimey boom tack square-rigged trysail hardtack capstan Buccaneer six pounders run a shot across the bow Corsair parley lee lad ht run a rig rum barkadeer Arr killick weigh anchor Jolly Roger pinnace boom hornswaggle blow the man down bilged on her anchor wench. Gabion barkadeer broadside walk the plank long boat haul wind main sheet Davy Jones'. </p>
+            </div>
+            <div class="col-md-6 info-list">
+                <ul>
+                    <li>her cable hulk jury mast matey broadside quarter boatswain</li>
+                    <li>her cable hulk jury mast matey broadside quarter boatswain </li>
+                    <li>her cable hulk jury mast matey broadside quarter boatswain </li>
+                    <li>her cable hulk jury mast matey broadside quarter boatswain </li>
+                    <li>her cable hulk jury mast matey broadside quarter boatswain </li>
+                    <li>her cable hulk jury mast matey broadside quarter boatswain </li>
+                    <li>her cable hulk jury mast matey broadside quarter boatswain </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="sign-up">
+        <form id="userForm">
+            <h2>Sign Up Section</h2>
+            <label for="userPhone">Phone Number (in the form xxx-xxx-xxxx)</label>
+            <div class="input-group">
+                <input type="tel" id="userPhone" name="userPhone" class="form-control" placeholder="123-467-8901"  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                <span class="validity"></span>
+            </div>
+            <label for="userDate">Due Date/Birth Date</label>
+            <input type="date" id="userDate" name="userDate" class="form-control">
+            <input type="submit" value="SUBMIT" class="btn" id="userDataButton" required>
+        </form>
+    </div>
+
+    <div class="container-fluid photo-gallery">
+        <div class="row">
+            <div class="col-md-3 col-sm-6 image-column">
+                <img src="images/gallery1.png" alt="Mom and daughter">
+            </div>
+            <div class="col-md-3 col-sm-6 image-column">
+                <img src="images/gallery2.jpg" alt="Mom and Son">
+            </div>
+            <div class="col-md-3 col-sm-6 image-column">
+                <img src="images/gallery5.jpg" alt="Mom and daughter">
+            </div>
+            <div class="col-md-3 col-sm-6 image-column">
+                <img src="images/gallery4.jpg" alt="Pregnant Woman">
+            </div>
+        </div>
+    </div>
+
+    <div class="contact-section">
+        <form id="commentForm">
+            <h2>Contact Us</h2>
+            <textarea id="userComment"  placeholder="Tell us about the texts and about your own story." rows="10" cols="40"></textarea>
+            <input type="submit" value="SUBMIT" class="btn" id="userDataButton">
+        </form>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="scripts/custom.js"></script>
+</body>
+</html>
